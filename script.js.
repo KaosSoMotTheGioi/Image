@@ -1,0 +1,14 @@
+const images = [
+    "images/image1.jpg",
+    "images/image2.jpg",
+    // ... thêm đường dẫn đến các ảnh khác
+];
+
+const randomImage = document.getElementById('randomImage');
+
+function getRandomImage() {
+    const randomIndex = Math.floor(Math.random() * images.length);
+    randomImage.src = images[randomIndex];
+}
+
+getRandomImage(); // Gọi hàm khi trang load lần đầu
